@@ -9,7 +9,7 @@ const answersContainer = document.getElementById('answers-container');
 const currentQuestionSpan = document.getElementById('current-question');
 const totalQuestionsSpan = document.getElementById('total-questions');
 const scoreSpan = document.getElementById('score');
-const finalScoreSpan = document.getElementById('final-core');
+const finalScoreSpan = document.getElementById('final-score');
 const maxScoreSpan = document.getElementById('max-score');
 const resulMessage = document.getElementById('result-message');
 const progressBar = document.getElementById('progress');
@@ -31,6 +31,15 @@ const quizQuestions = [
       { text: 'Mars', correct: true },
       { text: 'Jupiter', correct: false },
       { text: 'Saturn', correct: false },
+    ],
+  },
+  {
+    question: 'Who is the american singer',
+    answers: [
+      { text: 'Tarkan', correct: false },
+      { text: 'Mcdonals', correct: false },
+      { text: '50cent', correct: true },
+      { text: 'Homay', correct: false },
     ],
   },
 ];
