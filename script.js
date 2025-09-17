@@ -167,9 +167,10 @@ function showResults() {
 }
 
 function restartQuiz() {
-  reslutScreen.classList.remove('active');
+  // reslutScreen.classList.remove('active');
 
-  startQuiz();
+  // startQuiz();
+  window.location.reload();
 }
 
 function showQuestion() {
@@ -239,12 +240,3 @@ function selectAnsewr(event) {
 }
 
 showQuestion();
-
-function showResults() {
-  quizscreen.classList.remove('active');
-  reslutScreen.classList.add('active');
-
-  finalScoreSpan.textContent = score;
-
-  const percentage = (score / quizQuestions.length) * 100;
-}
